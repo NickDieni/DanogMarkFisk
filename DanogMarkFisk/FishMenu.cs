@@ -40,6 +40,9 @@ namespace DanogMarkFisk
         public void AddFish()
         {
             Fish fish = new Fish();
+            Console.WriteLine("What is the name of the Fish?");
+            fish.FishName = Convert.ToString(Console.ReadLine());
+            Console.Clear();
             Console.WriteLine("Saltwaterfish(1)");
             Console.WriteLine("Freshwaterfish(2)");
             var v = Console.ReadKey(true);
@@ -83,6 +86,8 @@ namespace DanogMarkFisk
                     AddFish();
                     break;
             }
+
+
 
 
             //Aquarium 1 
