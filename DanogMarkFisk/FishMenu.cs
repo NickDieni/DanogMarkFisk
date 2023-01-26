@@ -39,24 +39,67 @@ namespace DanogMarkFisk
         //Tilføj Fisk
         public void AddFish()
         {
-            Console.WriteLine("Is it a");
+            Fish fish = new Fish();
+            Console.WriteLine("Saltwaterfish(1)");
+            Console.WriteLine("Freshwaterfish(2)");
+            var v = Console.ReadKey(true);
+            switch (v.KeyChar)
+            {
+                case '1':
+                    fish.FishType = true;
+
+
+                    break;
+                case '2':
+                    fish.FishType = false;
+
+                    break;
+
+                default:
+                    Console.Clear();
+                    Console.WriteLine("Invalid input");
+                    AddFish();
+                    break;
+            }
+            Console.Clear();
+            Console.WriteLine("Meat-eating Fish (1)");
+            Console.WriteLine("Plant-eating Fish(2)");
+            var u = Console.ReadKey(true);
+            switch (u.KeyChar)
+            {
+                case '1':
+                    fish.FishFood = true;
+
+
+                    break;
+                case '2':
+                    fish.FishFood = false;
+
+                    break;
+
+                default:
+                    Console.Clear();
+                    Console.WriteLine("Invalid input");
+                    AddFish();
+                    break;
+            }
+
+
+            //Aquarium 1 
+
+
+
+
+            //Aquarium 2
+
+
+
+            //Aquarium 3
+
+
+
+            //Aquarium 4
+
         }
-
-
-        //Aquarium 1 
-
-
-
-
-        //Aquarium 2
-
-
-
-        //Aquarium 3
-
-
-
-        //Aquarium 4
-
     }
 }
