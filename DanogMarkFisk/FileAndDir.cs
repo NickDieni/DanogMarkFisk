@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DanogMarkFisk
+﻿namespace DanogMarkFisk
 {
     public class FileAndDir
     {
@@ -14,11 +8,9 @@ namespace DanogMarkFisk
         public string aq3 = "C:/User/Dan&Mark/Aq3";
         public string aq4 = "C:/User/Dan&Mark/Aq4";
         public bool con;
-
         public void Control()
         {
-
-            if(!Directory.Exists(maindir))
+            if (!Directory.Exists(maindir))
             {
                 Directory.CreateDirectory(maindir);
                 Directory.CreateDirectory(aq1);
@@ -29,7 +21,6 @@ namespace DanogMarkFisk
             }
             else
             {
-
                 con = false;
             }
         }

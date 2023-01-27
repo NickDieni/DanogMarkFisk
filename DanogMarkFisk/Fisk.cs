@@ -1,6 +1,4 @@
-﻿using DanogMarkFisk;
-
-namespace DanogMarkFisk
+﻿namespace DanogMarkFisk
 {
     public class Fish
     {

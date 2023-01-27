@@ -1,6 +1,8 @@
 ﻿using DanogMarkFisk;
 
 FishMenu nyMenu = new FishMenu();
-while(true)
-{nyMenu.Menu(); 
+bool k = true;
+while (k = true)
+{
+    nyMenu.Menu();
 }
